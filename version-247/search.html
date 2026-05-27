@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>搜索筛选-最新欧美视频</title>
+    <meta name="description" content="最新欧美视频栏目聚合近期更新内容，覆盖多题材视频片库和精选页面。">
+    <meta name="keywords" content="搜索,最新欧美视频,欧美视频,最新内容,高清播放,影片合集,热门视频,内容更新">
+    <meta name="robots" content="index,follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="搜索筛选-最新欧美视频">
+    <meta property="og:description" content="最新欧美视频栏目聚合近期更新内容，覆盖多题材视频片库和精选页面。">
+    <meta property="og:site_name" content="欧美视频">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header" data-header>
+    <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="返回首页">
+            <span class="brand-icon">▶</span>
+            <span class="brand-text">
+                <strong>欧美视频</strong>
+                <small>高清在线播放</small>
+            </span>
+        </a>
+        <nav class="main-nav" aria-label="主导航">
+            <a class="nav-link " href="index.html">首页</a><a class="nav-link " href="categories.html">分类</a><a class="nav-link " href="ranking.html">排行榜</a><a class="nav-link active" href="search.html">搜索</a>
+            <div class="nav-dropdown">
+                <button type="button" class="nav-link nav-drop-btn">精选分类</button>
+                <div class="nav-drop-menu">
+                    <a href="category/oumei-rebo.html">欧美热播</a><a href="category/huayu-jingxuan.html">华语精选</a><a href="category/rihan-juchang.html">日韩剧场</a><a href="category/xuanyi-jingsong.html">悬疑惊悚</a>
+                </div>
+            </div>
+        </nav>
+        <button class="mobile-toggle" type="button" data-mobile-toggle aria-label="打开菜单">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+    <div class="mobile-panel" data-mobile-panel>
+        <a href="index.html">首页</a>
+        <a href="categories.html">分类总览</a>
+        <a href="ranking.html">排行榜</a>
+        <a href="search.html">搜索筛选</a>
+        <a href="category/oumei-rebo.html">欧美热播</a><a href="category/huayu-jingxuan.html">华语精选</a><a href="category/rihan-juchang.html">日韩剧场</a><a href="category/xuanyi-jingsong.html">悬疑惊悚</a>
+    </div>
+</header>
+<main>
+
+<section class="page-hero small-hero">
+    <div class="container">
+        <span class="eyebrow">Search</span>
+        <h1>搜索 / 筛选</h1>
+        <p>片库共 2000 部，支持按片名、地区、年份、类型、标签关键词快速筛选。</p>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+        <div class="search-page-panel">
+            <input type="search" id="global-search" placeholder="输入片名、地区、年份、类型或标签" aria-label="全站搜索">
+            <select id="region-filter" aria-label="地区筛选">
+                <option value="">全部地区</option>
+            </select>
+            <select id="type-filter" aria-label="类型筛选">
+                <option value="">全部类型</option>
+            </select>
+            <button class="btn btn-primary" type="button" id="reset-search">重置</button>
+        </div>
+        <div class="search-count" id="search-count"></div>
+        <div class="movie-grid all-grid" id="search-results"></div>
+    </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <a class="brand footer-brand" href="index.html">
+                <span class="brand-icon">▶</span>
+                <span class="brand-text">
+                    <strong>欧美视频</strong>
+                    <small>最新影片合集</small>
+                </span>
+            </a>
+            <p>最新欧美视频栏目聚合近期更新内容，覆盖多题材视频片库和精选页面。</p>
+        </div>
+        <div>
+            <h3>快速入口</h3>
+            <a href="index.html">首页</a>
+            <a href="categories.html">分类总览</a>
+            <a href="ranking.html">排行榜</a>
+            <a href="search.html">全站搜索</a>
+        </div>
+        <div>
+            <h3>精选分类</h3>
+            <a href="category/oumei-rebo.html">欧美热播</a>
+<a href="category/huayu-jingxuan.html">华语精选</a>
+<a href="category/rihan-juchang.html">日韩剧场</a>
+<a href="category/xuanyi-jingsong.html">悬疑惊悚</a>
+<a href="category/aiqing-xiju.html">爱情喜剧</a>
+<a href="category/dongzuo-maoxian.html">动作冒险</a>
+<a href="category/juqing-jishi.html">剧情纪实</a>
+<a href="category/qihuan-donghua.html">奇幻动画</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>© 2026 欧美视频</span>
+        <span>高清片库 · 静态页面 · 响应式浏览</span>
+    </div>
+</footer>
+<script src="assets/app.js"></script>
+<script src="assets/movies-index.js"></script>
+<script src="assets/search.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
